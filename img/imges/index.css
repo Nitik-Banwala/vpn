@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: "Rubik", sans-serif;
+
+}
+
+
+.loop-slider {
+    .company {
+        animation-name: loop;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: var(--direction);
+        animation-duration: var(--duration);
+    }
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.company img {
+    max-width: none;
+}
+
+/* navbar */
+
+nav.scrolled {
+    box-shadow: 0 -25px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/* section6 */
+
+:root {
+    --text-xl: 35px;
+    --text-lg: 18px;
+    --text-md: 16px;
+    --text-sm: 14px;
+}
+
+.heading {
+    font-size: var(--text-xl);
+}
+
+.name {
+    font-size: var(--text-lg);
+}
+
+.decription {
+    font-size: var(--text-md);
+}
+
+.location {
+    font-size: var(--text-sm);
+}
+
+.about {
+    font-size: var(--text-md);
+}
+
+.slick-track {
+    display: flex !important;
+}
+
+.slick-slide {
+    height: inherit !important;
+    display: flex !important;
+}
+
+.slick-slide>div {
+    display: flex;
+}
+
+.slick-slide {
+    margin: 0 20px;
+    padding-bottom: 30px;
+}
+
+.button:hover {
+    background-color: #F53838;
+}
+
+.button svg path {
+    transition: all 100ms linear;
+}
+
+.button:hover svg path {
+    fill: #FFFFFF;
+}
+
+.slick-current .card {
+    border: 2px solid #F53838;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.slick-dots {
+    text-align: left !important;
+}
+
+.slick-dots li button {
+    display: none;
+}
+
+.slick-dots li button::before {
+    content: unset !important;
+}
+
+.slick-dots li {
+    width: 15px;
+    height: 15px;
+    background-color: #DDE0E4;
+    border-radius: 15px;
+    transition: width 200ms linear;
+    margin-left: 7px !important;
+    margin-right: 7px !important;
+}
+
+.slick-dots li.slick-active {
+    background-color: #F53838;
+    width: 40px;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -75px !important;
+}
+
+@media(max-width:425px) {
+    .button-parent {
+        display: none;
+    }
+
+    .slick-dots {
+        display: flex !important;
+        justify-content: center;
+    }
+}
+
+@media(max-width:525px) {
+    .name {
+        font-size: var(--text-sm);
+    }
+
+    .slick-dots li {
+        width: 12px !important;
+        height: 12px !important;
+    }
+
+    .button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .slick-dots li.slick-active {
+        width: 35px !important;
+    }
+
+    :root {
+        --text-xl: 25px;
+        --text-lg: 16px;
+        --text-md: 14px;
+        --text-sm: 12px;
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: -10px !important;
+
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .button-parent {
+        display: none;
+    }
+
+    .slick-dots {
+        display: flex !important;
+        justify-content: center;
+    }
+}
+
+@media(max-width:998px) {
+    :root {
+        --text-xl: 35px;
+        --text-lg: 15px;
+        --text-md: 14px;
+        --text-sm: 12px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .rating {
+        margin-right: 6px;
+    }
+}
+
+@media(min-width:768px) {
+    .over-slider {
+        z-index: 2;
+    }
+
+    .slick-list {
+        overflow: visible !important;
+        padding: 0 20% 0 0;
+        position: relative;
+    }
+
+    .slick-list::after {
+        content: ' ';
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        width: 4000px;
+        right: 100%;
+        background-color: white;
+    }
+}
+
+@media(max-width:1024px) {
+
+    .activeNavBar .menu-icon span:first-child {
+        transform: rotate(44deg);
+        transform-origin: left;
+        transition: all 200ms linear;
+    }
+
+    .activeNavBar .menu-icon span:nth-child(2) {
+        display: none;
+        pointer-events: none;
+    }
+
+    .activeNavBar .menu-icon span:last-child {
+        transform: rotate(-43deg);
+        transform-origin: left;
+        transition: all 200ms linear;
+    }
+
+    .activeNavBar .menu-icon {
+        height: 35px;
+    }
+
+    .menu-list.show {
+        right: 0;
+    }
+}
+:root {
+    --fs-4xl: 42px;
+    --fs-3xl: 30px;
+    --fs-2xl: 23px;
+    --fs-xl: 19px;
+    --fs-lg: 18px;
+    --fs-md: 14px;
+    --fs-sm: 12px;
+
+
+    --fw-lg: 700;
+    --fw-md: 500;
+    --fw-sm: 400;
+
+}
+
+.fs_4xl {
+    font-size: var(--fs-4xl);
+}
+
+.fs_3xl {
+    font-size: var(--fs-3xl);
+}
+
+.fs_2xl {
+    font-size: var(--fs-2xl);
+}
+
+.fs_xl {
+    font-size: var(--fs-xl);
+}
+
+.fs_lg {
+    font-size: var(--fs-lg);
+}
+
+.fs_md {
+    font-size: var(--fs-md);
+}
+
+.fs_sm {
+    font-size: var(--fs-sm);
+}
+
+.fw_lg {
+    font-weight: var(--fs-lg);
+}
+
+.fw_md {
+    font-weight: var(--fs-md);
+}
+
+.fw_sm {
+    font-weight: var(--fs-sm);
+}
+
+@media(min-width:1024px) {
+    :root {
+        --fs-4xl: 50px;
+        --fs-3xl: 35px;
+        --fs-2xl: 25px;
+        --fs-xl: 20px;
+        --fs-lg: 18px;
+        --fs-md: 16px;
+        --fs-sm: 14px;
+
+
+    }
+}

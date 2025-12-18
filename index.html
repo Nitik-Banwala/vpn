@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPN</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/src/input.css">
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/img/imges/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="icon/x-icon" href="/img/Standard Collection 27.png">
+</head>
+
+<body class="h-screen">
+    <!-- nav -->
+    <nav class="w-full sm:p-5 p-3 fixed top-0 bg-white z-20">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex gap-2 items-center cursor-pointer hover:scale-110">
+                <img src="/img/Standard Collection 27.png" alt="logo">
+                <p class="font-medium  max-[480px]:hidden fs_xl">Lasle<span class="font-bold">VPN</span></p>
+            </div>
+            <div class="flex items-center xl:gap-62.5 lg:gap-25 max-lg:flex-row-reverse gap-4">
+
+                <button
+                    class="menu-icon w-11 h-7 cursor-pointer flex z-30 justify-between flex-col border-none lg:hidden"
+                    onclick="menuIcon()">
+                    <span class="w-full h-1 bg-[#F53838] rounded transition duration-100 ease-linear"></span>
+                    <span class="w-full h-1 bg-[#F53838] rounded"></span>
+                    <span class="w-full h-1 bg-[#F53838] rounded"></span>
+                </button>
+                <div
+                    class="flex gap-9 items-center menu-list lg:flex-row max-lg:flex-col max-lg:justify-center max-lg:h-full max-lg:w-[75%] max-lg:fixed max-lg:top-0 max-lg:-right-full z-10  transition-all max-lg:bg-white">
+                    <a href=""
+                        class="text-[#4F5665] max-lg:text-[#F53838] font-normal fs_md  hover:font-semibold hover:text-[#F53855] transition-colors duration-200 text-stroke-3">About</a>
+                    <a href=""
+                        class="text-[#4F5665]  max-lg:text-[#F53838] font-normal fs_md hover:font-semibold hover:text-[#F53855] transition-colors duration-200 text-stroke-3">Features</a>
+                    <a href=""
+                        class="text-[#4F5665]  max-lg:text-[#F53838] font-normal fs_md hover:font-semibold hover:text-[#F53855] transition-colors duration-200 text-stroke-3">Pricing</a>
+                    <a href=""
+                        class="text-[#4F5665] max-lg:text-[#F53838] font-normal fs_md hover:font-semibold hover:text-[#F53855] transition-colors duration-200 text-stroke-3">Testimonials</a>
+                    <a href=""
+                        class="text-[#4F5665] max-lg:text-[#F53838] font-normal fs_md hover:font-semibold hover:text-[#F53855] transition-colors duration-200 ">Help</a>
+                </div>
+                <div class="flex sm:gap-7 gap-4 items-center">
+                    <p
+                        class="font-medium text-black fs_md hover:text-[#F53855] transition-color duration-100 cursor-pointer hover:font-bold hover:scale-110 whitespace-nowrap">
+                        Sign In</p>
+                    <button
+                        class="fw_md fs_md text-[#F53855] py-3 px-8 sm:px-11 rounded-3xl border border-[#F53855] hover:text-white hover:bg-[#F53838] transition-colors duration-200  shadow-[#F5383859] hover:shadow-xl cursor-pointer whitespace-nowrap">Sign
+                        Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- header -->
+    <header>
+        <div class="container mx-auto px-3 mt-28 flex flex-col">
+            <div class="flex mb-24 lg:flex-row flex-col-reverse gap-10">
+                <div class="lg:w-1/2 max-w-full lg:max-w-138.75">
+                    <p class="font-medium fs_4xl ">Want anything to be easy with <span
+                            class="font-bold">LaslesVPN.</span>
+                    </p>
+                    <p class="font-normal  mt-5 mb-12 fs_md text-[#4F5665] ">Provide a network for all your
+                        needs with ease and fun using <span class="font-medium">LaslesVPN</span> discover interesting
+                        features from us.</p>
+                    <button
+                        class="text-white font-bold fs_md px-19.5 py-4.5 bg-[#F53838] rounded-xl cursor-pointer shadow-[#F5383859] hover:shadow-xl transition-shadow duration-200">Get
+                        Started</button>
+                </div>
+                <div class="lg:w-1/2 w-full">
+                    <img src="/img/Illustration 1.svg" alt="image" class="w-full cursor-pointer">
+                </div>
+            </div>
+            <div
+                class="md:py-9.25 md:px-22.5 pb-9 flex justify-between shadow-[0_18px_44px_-35px_rgba(0,0,0,0.2)] rounded-xl min-[535px]:flex-row flex-col gap-14 md:gap-0 ">
+                <div class="flex sm:gap-9 gap-6 items-center">
+                    <div class="h-13.75 w-13.75 rounded-full bg-[#FFECEC] flex items-center justify-center">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.4996 11.7176C13.4544 11.7176 14.3701 11.3383 15.0452 10.6632C15.7203 9.98803 16.0996 9.07236 16.0996 8.11758C16.0996 7.1628 15.7203 6.24712 15.0452 5.57199C14.3701 4.89686 13.4544 4.51758 12.4996 4.51758C11.5448 4.51758 10.6292 4.89686 9.95403 5.57199C9.27889 6.24712 8.89961 7.1628 8.89961 8.11758C8.89961 9.07236 9.27889 9.98803 9.95403 10.6632C10.6292 11.3383 11.5448 11.7176 12.4996 11.7176ZM7.39826 22.5176C5.57647 22.5176 4.04185 20.9862 4.73902 19.303C5.16116 18.2839 5.7799 17.3579 6.55991 16.5779C7.33992 15.7979 8.26593 15.1791 9.28507 14.757C10.3042 14.3349 11.3965 14.1176 12.4996 14.1176C13.6027 14.1176 14.695 14.3349 15.7142 14.757C16.7333 15.1791 17.6593 15.7979 18.4393 16.5779C19.2193 17.3579 19.8381 18.2839 20.2602 19.303C20.9574 20.9862 19.4228 22.5176 17.601 22.5176H7.39826Z"
+                                fill="#F53838" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="fw_lg fs_2xl text-black">90+</p>
+                        <p class="fw_sm fs_xl text-[#4F5665]">Users</p>
+                    </div>
+                </div>
+                <div class="w-0.5 bg-[#EEEFF2] h-31.25 rounded-sm md:block hidden"></div>
+                <div class="flex sm:gap-9 gap-6 items-center">
+                    <div class="h-13.75 w-13.75 rounded-full bg-[#FFECEC] flex items-center justify-center">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19 9.91797C19 8.99872 18.8189 8.08846 18.4672 7.23918C18.1154 6.38991 17.5998 5.61823 16.9497 4.96822C16.2997 4.31821 15.5281 3.80259 14.6788 3.45081C13.8295 3.09903 12.9193 2.91797 12 2.91797C11.0807 2.91797 10.1705 3.09903 9.32122 3.45081C8.47194 3.80259 7.70026 4.31821 7.05025 4.96822C6.40024 5.61823 5.88463 6.38991 5.53284 7.23918C5.18106 8.08846 5 8.99872 5 9.91797C5 11.305 5.41 12.595 6.105 13.683H6.097C8.457 17.378 12 22.918 12 22.918L17.903 13.683H17.896C18.6164 12.5593 18.9995 11.2527 19 9.91797ZM12 12.918C11.2044 12.918 10.4413 12.6019 9.87868 12.0393C9.31607 11.4767 9 10.7136 9 9.91797C9 9.12232 9.31607 8.35926 9.87868 7.79665C10.4413 7.23404 11.2044 6.91797 12 6.91797C12.7956 6.91797 13.5587 7.23404 14.1213 7.79665C14.6839 8.35926 15 9.12232 15 9.91797C15 10.7136 14.6839 11.4767 14.1213 12.0393C13.5587 12.6019 12.7956 12.918 12 12.918Z"
+                                fill="#F53838" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="fw_lg fs_2xl text-black">30+</p>
+                        <p class="fw_sm fs_xl text-[#4F5665]">Users</p>
+                    </div>
+                </div>
+                <div class="w-0.5 bg-[#EEEFF2] h-31.25 rounded-sm md:block hidden"></div>
+                <div class="flex sm:gap-9 gap-6 items-center">
+                    <div class="h-13.75 w-13.75 rounded-full bg-[#FFECEC] flex items-center justify-center">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.5 3.91797H4.5C3.96957 3.91797 3.46086 4.12868 3.08579 4.50376C2.71071 4.87883 2.5 5.38754 2.5 5.91797V9.91797C2.5 10.4484 2.71071 10.9571 3.08579 11.3322C3.46086 11.7073 3.96957 11.918 4.5 11.918H20.5C21.0304 11.918 21.5391 11.7073 21.9142 11.3322C22.2893 10.9571 22.5 10.4484 22.5 9.91797V5.91797C22.5 5.38754 22.2893 4.87883 21.9142 4.50376C21.5391 4.12868 21.0304 3.91797 20.5 3.91797ZM15.5 7.91797C15.5 8.47025 15.0523 8.91797 14.5 8.91797C13.9477 8.91797 13.5 8.47025 13.5 7.91797C13.5 7.36568 13.9477 6.91797 14.5 6.91797C15.0523 6.91797 15.5 7.36568 15.5 7.91797ZM19.5 7.91797C19.5 8.47025 19.0523 8.91797 18.5 8.91797C17.9477 8.91797 17.5 8.47025 17.5 7.91797C17.5 7.36568 17.9477 6.91797 18.5 6.91797C19.0523 6.91797 19.5 7.36568 19.5 7.91797ZM20.5 13.918H4.5C3.96957 13.918 3.46086 14.1287 3.08579 14.5038C2.71071 14.8788 2.5 15.3875 2.5 15.918V19.918C2.5 20.4484 2.71071 20.9571 3.08579 21.3322C3.46086 21.7073 3.96957 21.918 4.5 21.918H20.5C21.0304 21.918 21.5391 21.7073 21.9142 21.3322C22.2893 20.9571 22.5 20.4484 22.5 19.918V15.918C22.5 15.3875 22.2893 14.8788 21.9142 14.5038C21.5391 14.1287 21.0304 13.918 20.5 13.918ZM15.5 17.918C15.5 18.4703 15.0523 18.918 14.5 18.918C13.9477 18.918 13.5 18.4703 13.5 17.918C13.5 17.3657 13.9477 16.918 14.5 16.918C15.0523 16.918 15.5 17.3657 15.5 17.918ZM19.5 17.918C19.5 18.4703 19.0523 18.918 18.5 18.918C17.9477 18.918 17.5 18.4703 17.5 17.918C17.5 17.3657 17.9477 16.918 18.5 16.918C19.0523 16.918 19.5 17.3657 19.5 17.918Z"
+                                fill="#F53838" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="fw_lg fs_2xl text-black">50+</p>
+                        <p class="fw_sm fs_xl text-[#4F5665]">Users</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- section2 -->
+    <section>
+        <div
+            class="container mx-auto px-3 flex mt-24 justify-between md:mb-35.75 mb-5 md:flex-row flex-col items-center gap-5">
+            <div class="md:w-1/2  w-full">
+                <img src="/img/Illustration 2.png" alt="image" class="w-full cursor-pointer">
+            </div>
+            <div class="md:w-1/2  max-w-full lg:max-w-106.75 flex flex-col justify-end">
+                <h2 class="text-black fw_md fs_3xl ">We Provide Many Features You Can Use</h2>
+                <p class="text-[#4F5665] my-8 ">You can explore the features that we provide
+                    with fun and have their own
+                    functions
+                    each feature.</p>
+                <div class="flex flex-col">
+                    <div class="flex gap-2.5 mb-5 items-center">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 0C4.486 0 0 4.486 0 10C0 15.514 4.486 20 10 20C15.514 20 20 15.514 20 10C20 4.486 15.514 0 10 0ZM8.001 14.413L4.99545 11.4139C4.6047 11.024 4.60391 10.3912 4.99369 10.0003C5.38371 9.60918 6.01701 9.60846 6.40793 9.9987L7.999 11.587L12.586 7C12.9765 6.60953 13.6095 6.60953 14 7C14.3905 7.39047 14.3905 8.02353 14 8.414L8.001 14.413Z"
+                                fill="#2FAB73" class="cursor-pointer" />
+                        </svg>
+
+                        <p class="fw_sm fs_sm text-[#4F5665]">Powerfull online protection.</p>
+                    </div>
+                    <div class="flex gap-2.5 mb-5 items-center">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 0C4.486 0 0 4.486 0 10C0 15.514 4.486 20 10 20C15.514 20 20 15.514 20 10C20 4.486 15.514 0 10 0ZM8.001 14.413L4.99545 11.4139C4.6047 11.024 4.60391 10.3912 4.99369 10.0003C5.38371 9.60918 6.01701 9.60846 6.40793 9.9987L7.999 11.587L12.586 7C12.9765 6.60953 13.6095 6.60953 14 7C14.3905 7.39047 14.3905 8.02353 14 8.414L8.001 14.413Z"
+                                fill="#2FAB73" class="cursor-pointer" />
+                        </svg>
+
+                        <p class="fw_sm fs_sm text-[#4F5665]">Internet without borders.</p>
+                    </div>
+                    <div class="flex gap-2.5 mb-5 items-center">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 0C4.486 0 0 4.486 0 10C0 15.514 4.486 20 10 20C15.514 20 20 15.514 20 10C20 4.486 15.514 0 10 0ZM8.001 14.413L4.99545 11.4139C4.6047 11.024 4.60391 10.3912 4.99369 10.0003C5.38371 9.60918 6.01701 9.60846 6.40793 9.9987L7.999 11.587L12.586 7C12.9765 6.60953 13.6095 6.60953 14 7C14.3905 7.39047 14.3905 8.02353 14 8.414L8.001 14.413Z"
+                                fill="#2FAB73" class="cursor-pointer" />
+                        </svg>
+
+                        <p class="fw_sm fs_sm text-[#4F5665]">Supercharged VPN</p>
+                    </div>
+                    <div class="flex gap-2.5 mb-5 items-center">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 0C4.486 0 0 4.486 0 10C0 15.514 4.486 20 10 20C15.514 20 20 15.514 20 10C20 4.486 15.514 0 10 0ZM8.001 14.413L4.99545 11.4139C4.6047 11.024 4.60391 10.3912 4.99369 10.0003C5.38371 9.60918 6.01701 9.60846 6.40793 9.9987L7.999 11.587L12.586 7C12.9765 6.60953 13.6095 6.60953 14 7C14.3905 7.39047 14.3905 8.02353 14 8.414L8.001 14.413Z"
+                                fill="#2FAB73" class="cursor-pointer" />
+                        </svg>
+
+                        <p class="fw_sm fs_sm text-[#4F5665]">No specific time limits.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section3 -->
+    <section class="bg-[#FBFBFB] sm:pb-37.5 pb-25">
+        <div class="container mx-auto px-3">
+            <h2 class="font-medium fs_3xl text-black text-center mb-5 pt-20">Choose Your Plan</h2>
+            <p class="font-normal fs_md text-center mx-auto text-[#4F5665] max-w-138.75 mb-15">Let's choose the
+                package that is best for you and explore it happily and cheerfully.</p>
+            <div class="grid md:grid-cols-3 grid-cols-2  max-[500px]:grid-cols-1 xl:gap-12 lg:gap-8 gap-6">
+                <div
+                    class=" max-[500px]:w-75 max-[500px]:mx-auto transform transition duration-200 hover:-translate-y-5 border-2 hover:border-[#F53838] border-[#DDDDDD] rounded-xl flex flex-col justify-between   xl:px-[910 pt-[19.75 pb-12.5 cursor-pointer">
+                    <div class="flex flex-col items-center">
+                        <img src="/img/Standard.png" alt="image" class="mt-20">
+                        <p class="fs_lg font-medium text-black my-8 text-center">Free Plan</p>
+                        <div>
+                            <div class="flex  mb-3 gap-5">
+                                <img src="/img/tick.png" alt="image" class="w-5">
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Unlimited Bandwitch</p>
+                            </div>
+                            <div class="flex  mb-3 gap-5">
+                                <img src="/img/tick.png" alt="image" class="w-5">
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Encrypted Connection</p>
+                            </div>
+                            <div class="flex  mb-3 gap-5">
+                                <img src="/img/tick.png" alt="image" class="w-5">
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">No Traffic Logs</p>
+                            </div>
+                            <div class="flex  mb-3 gap-5">
+                                <img src="/img/tick.png" alt="image" class="w-5">
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Works on All Devices</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col  items-center mt-10 lg:mt-0">
+                        <p class="font-medium fs_2xl text-black  mb-5 text-center">Free</p>
+                        <button
+                            class=" font-bold fs_md text-[#F53838] border-2 border-[#F53838] rounded-[50px] max-w-82.5 cursor-pointer py-3 px-14 hover:text-white hover:bg-[#F53838] transition-colors duration-200  shadow-[#F5383859] hover:shadow-xl">Select</button>
+                    </div>
+                </div>
+                <div
+                    class=" max-[500px]:w-75 max-[500px]:mx-auto transform transition duration-200 hover:-translate-y-5 border-2 hover:border-[#F53838] border-[#DDDDDD] rounded-xl flex  flex-col  justify-between  xl:px-22.5 md:px-10 pt-[19.75 pb-12.5 cursor-pointer ">
+                    <div class="flex flex-col items-center">
+                        <img src="/img/Standard.png" alt="image" class="mt-20">
+                        <p class="fs_lg font-medium text-black my-8 text-center whitespace-nowrap">Standard Plan</p>
+                        <div>
+                            <div class="flex  mb-3 gap-5">
+                                <img src="/img/tick.png" alt="image" class="w-5">
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Unlimited Bandwitch</p>
+                            </div>
+                            <div class="flex  mb-3 gap-5">
+                                <img src="/img/tick.png" alt="image" class="w-5">
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Encrypted Connection</p>
+                            </div>
+                            <div class="flex  mb-3 gap-5">
+                                <img src="/img/tick.png" alt="image" class="w-5">
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Yes Traffic Logs</p>
+                            </div>
+                            <div class="flex  mb-3 gap-5">
+                                <img src="/img/tick.png" alt="image" class="w-5">
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Works on All Devices</p>
+                            </div>
+                            <div class="flex  mb-3 gap-5">
+                                <img src="/img/tick.png" alt="image" class="w-5">
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Connect Anyware</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col  items-center mt-7.5 lg:gap-0">
+                        <p class="font-medium fs_2xl text-black mb-5 text-center whitespace-nowrap">$9 <span
+                                class="font-normal fs_2xl text-[#4F5665]">/ mo</span></p>
+                        <button
+                            class="font-bold fs_md text-[#F53838] border-2 border-[#F53838] rounded-[50px] max-w-82.5 cursor-pointer py-3 px-14 hover:text-white hover:bg-[#F53838] transition-colors duration-200  shadow-[#F5383859] hover:shadow-xl">Select
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="max-[500px]:w-75 max-[500px]:mx-auto transform transition duration-200 hover:-translate-y-5 border-2  hover:border-[#F53838] border-[#DDDDDD] rounded-xl flex flex-col justify-between  xl:px-22.5 pt-[19.75 md:px-10 pb-12.5 cursor-pointer">
+                    <div class="pb-12.5 flex flex-col items-center">
+                        <img src="/img/Standard.png" alt="image" class="mt-20">
+                        <p class="fs_lg font-medium text-black my-8 text-center">Premium Plan</p>
+                        <div>
+                            <div class="flex  mb-3 gap-5">
+                                <img src="/img/tick.png" alt="image" class="w-5">
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Unlimited Bandwitch</p>
+                            </div>
+                            <div class="flex  mb-3 gap-5">
+                                <img src="/img/tick.png" alt="image" class="w-5">
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Encrypted Connection</p>
+                            </div>
+                            <div class="flex  mb-3 gap-5">
+                                <img src="/img/tick.png" alt="image" class="w-5">
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">No Traffic Logs</p>
+                            </div>
+                            <div class="flex  mb-3 gap-5">
+                                <img src="/img/tick.png" alt="image" class="w-5">
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Works on All Devices</p>
+                            </div>
+                            <div class="flex  mb-3 gap-5">
+                                <img src="/img/tick.png" alt="image" class="w-5">
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Connect Anyware</p>
+                            </div>
+                            <div class="flex  mb-3 gap-5">
+                                <img src="/img/tick.png" alt="image" class="w-5">
+                                <p class="fs_sm font-normal text-[#4F5665] whitespace-nowrap">Get New Features</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col  items-center">
+                        <p class="font-medium fs_2xl text-black  mb-5 text-center whitespace-nowrap">$12<span
+                                class="font-normal fs_2xl text-[#4F5665]">/ mo</span></p>
+                        <button
+                            class="font-bold fs_md text-[#F53838] border-2 border-[#F53838] rounded-[50px] max-w-82.5 cursor-pointer py-3 px-14 hover:text-white hover:bg-[#F53838] transition-colors duration-200  shadow-[#F5383859] hover:shadow-xl">Select
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section4 -->
+    <section class="bg-[#FBFBFB]">
+        <div class="container mx-auto px-3">
+
+            <div class="container mx-auto px-3 ">
+                <h2 class="font-medium fs_3xl text-black text-center max-w-95.75 mx-auto">Huge Global Network of Fast
+                    VPN
+                </h2>
+                <p class="text-center text-[#4F5665] fs_md font-normal max-w-138.75 mx-auto mt-5 sm:mb-36 mb-24">See
+                    <span class="font-bold ">LaslesVPN</span>
+                    everywhere
+                    to make it easier for you when you move locations.
+                </p>
+            </div>
+            <img src="/img/Huge Global.png" alt="image" class="w-full">
+            <div class="w-full flex flex-col relative py-6 overflow-hidden">
+                <div class="loop-slider" style="--duration:15s; --direction:normal;">
+                    <div class="flex w-fit company">
+                        <div class="m-8 flex items-center "><img src="/img/Mask Group.svg" alt="image"
+                                class="cursor-pointer"></div>
+                        <div class="m-8 flex items-center "><img src="/img/Mask Group (2).png" alt="image"
+                                class="cursor-pointer"></div>
+                        <div class="m-8 flex items-center "><img src="/img/amazone.png" alt="image"
+                                class="cursor-pointer"></div>
+                        <div class="m-8 flex items-center "><img src="/img/Mask Group (1).png" alt="image"
+                                class="cursor-pointer"> </div>
+                        <div class="m-8 flex items-center "><img src="/img/Mask Group (3).png" alt="image"
+                                class="cursor-pointer"></div>
+                        <div class="m-8 flex items-center "><img src="/img/Mask Group.svg" alt="image"
+                                class="cursor-pointer"></div>
+                        <div class="m-8 flex items-center "><img src="/img/Mask Group (2).png" alt="image"
+                                class="cursor-pointer"></div>
+                        <div class="m-8 flex items-center "><img src="/img/amazone.png" alt="image"
+                                class="cursor-pointer"></div>
+                        <div class="m-8 flex items-center "><img src="/img/Mask Group (1).png" alt="image"
+                                class="cursor-pointer"> </div>
+                        <div class="m-8 flex items-center "><img src="/img/Mask Group (3).png" alt="image"
+                                class="cursor-pointer"></div>
+                        <div class="m-8 flex items-center "><img src="/img/Mask Group.svg" alt="image"
+                                class="cursor-pointer"></div>
+                        <div class="m-8 flex items-center "><img src="/img/Mask Group (2).png" alt="image"
+                                class="cursor-pointer"></div>
+                        <div class="m-8 flex items-center "><img src="/img/amazone.png" alt="image"
+                                class="cursor-pointer"></div>
+                        <div class="m-8 flex items-center "><img src="/img/Mask Group (1).png" alt="image"
+                                class="cursor-pointer"> </div>
+                        <div class="m-8 flex items-center "><img src="/img/Mask Group (3).png" alt="image"
+                                class="cursor-pointer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section5 -->
+    <section class="pb-14.25 overflow-hidden">
+        <div class="container mx-auto px-3">
+            <div class="flex justify-center flex-col items-center">
+                <h3 class="font-medium text-center max-w-[447.18px]  heading">Trusted by Thousands of Happy Customer
+                </h3>
+                <p class="font-normal text-center max-w-138.75 text-[4F5665] mt-5 description">These are the stories of
+                    our customers who have joined us with great pleasure
+                    when using this crazy feature.</p>
+            </div>
+            <div class=" slider mt-15">
+                <div class=" card max-w-100 rounded-xl border-2  p-7.5 h-full border-[#DDDDDD] cursor-pointer ">
+                    <div class="flex items-center justify-between ">
+                        <div class=" max-w-45.5 h-12.5 flex">
+                            <img src="/img/Ellipse 175.png" alt="profile" class="mr-5">
+                            <div>
+                                <p class="font-medium name  align-middle whitespace-nowrap">Viezh Robert</p>
+                                <p class="font-normal location text-[#4F5665]">Warsaw, Poland</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <p class="mr-1.75">4.5</p>
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.1887 5.53497L10.2215 4.9584L8.4481 1.36309C8.39966 1.26465 8.31998 1.18497 8.22154 1.13653C7.97466 1.01465 7.67466 1.11622 7.55123 1.36309L5.77779 4.9584L1.8106 5.53497C1.70123 5.55059 1.60123 5.60215 1.52466 5.68028C1.4321 5.77541 1.3811 5.9034 1.38286 6.03613C1.38461 6.16885 1.43899 6.29544 1.53404 6.38809L4.40435 9.18653L3.72623 13.1381C3.71032 13.23 3.7205 13.3246 3.75559 13.411C3.79068 13.4974 3.84929 13.5723 3.92477 13.6271C4.00025 13.6819 4.08958 13.7145 4.18263 13.7211C4.27568 13.7278 4.36873 13.7082 4.45123 13.6647L7.99966 11.799L11.5481 13.6647C11.645 13.7162 11.7575 13.7334 11.8653 13.7147C12.1372 13.6678 12.32 13.41 12.2731 13.1381L11.595 9.18653L14.4653 6.38809C14.5434 6.31153 14.595 6.21153 14.6106 6.10215C14.6528 5.82872 14.4622 5.57559 14.1887 5.53497Z"
+                                    fill="#FEA250" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="max-w-85 font-normal about text-[#0B132A] align-middle mt-5">“Wow... I am very happy
+                        to use this VPN, it turned out to be more than my
+                        expectations and so far there have been no
+                        problems. LaslesVPN always the best”.</p>
+                </div>
+                <div class=" card max-w-100 rounded-xl border-2 p-7.5 h-full border-[#DDDDDD] cursor-pointer ">
+                    <div class="flex items-center justify-between ">
+                        <div class=" max-w-45.5 h-12.5 flex">
+                            <img src="/img/Ellipse 175 (1).png" alt="profile" class="mr-5">
+                            <div>
+                                <p class="font-medium name align-middle whitespace-nowrap">Yessica Christy</p>
+                                <p class="font-normal location text-[#4F5665] ">Shanxi, China</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center ">
+                            <p class="mr-1.75">4.5</p>
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.1887 5.53497L10.2215 4.9584L8.4481 1.36309C8.39966 1.26465 8.31998 1.18497 8.22154 1.13653C7.97466 1.01465 7.67466 1.11622 7.55123 1.36309L5.77779 4.9584L1.8106 5.53497C1.70123 5.55059 1.60123 5.60215 1.52466 5.68028C1.4321 5.77541 1.3811 5.9034 1.38286 6.03613C1.38461 6.16885 1.43899 6.29544 1.53404 6.38809L4.40435 9.18653L3.72623 13.1381C3.71032 13.23 3.7205 13.3246 3.75559 13.411C3.79068 13.4974 3.84929 13.5723 3.92477 13.6271C4.00025 13.6819 4.08958 13.7145 4.18263 13.7211C4.27568 13.7278 4.36873 13.7082 4.45123 13.6647L7.99966 11.799L11.5481 13.6647C11.645 13.7162 11.7575 13.7334 11.8653 13.7147C12.1372 13.6678 12.32 13.41 12.2731 13.1381L11.595 9.18653L14.4653 6.38809C14.5434 6.31153 14.595 6.21153 14.6106 6.10215C14.6528 5.82872 14.4622 5.57559 14.1887 5.53497Z"
+                                    fill="#FEA250" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="max-w-85 font-normal about text-[#0B132A] align-middle mt-5">“I like it because I
+                        like to travel far and still can connect with high speed.”.</p>
+                </div>
+                <div class=" card max-w-100 rounded-xl border-2 p-7.5 h-full border-[#DDDDDD] cursor-pointer ">
+                    <div class="flex items-center justify-between ">
+                        <div class=" max-w-45.5 h-12.5 flex">
+                            <img src="/img/Ellipse 175 (2).png" alt="profile" class="mr-5">
+                            <div>
+                                <p class="font-medium name align-middle whitespace-nowrap">Kim Young Jou</p>
+                                <p class="font-normal location text-[#4F5665]">Seoul, South Korea</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <p class="mr-1.75">4.5</p>
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.1887 5.53497L10.2215 4.9584L8.4481 1.36309C8.39966 1.26465 8.31998 1.18497 8.22154 1.13653C7.97466 1.01465 7.67466 1.11622 7.55123 1.36309L5.77779 4.9584L1.8106 5.53497C1.70123 5.55059 1.60123 5.60215 1.52466 5.68028C1.4321 5.77541 1.3811 5.9034 1.38286 6.03613C1.38461 6.16885 1.43899 6.29544 1.53404 6.38809L4.40435 9.18653L3.72623 13.1381C3.71032 13.23 3.7205 13.3246 3.75559 13.411C3.79068 13.4974 3.84929 13.5723 3.92477 13.6271C4.00025 13.6819 4.08958 13.7145 4.18263 13.7211C4.27568 13.7278 4.36873 13.7082 4.45123 13.6647L7.99966 11.799L11.5481 13.6647C11.645 13.7162 11.7575 13.7334 11.8653 13.7147C12.1372 13.6678 12.32 13.41 12.2731 13.1381L11.595 9.18653L14.4653 6.38809C14.5434 6.31153 14.595 6.21153 14.6106 6.10215C14.6528 5.82872 14.4622 5.57559 14.1887 5.53497Z"
+                                    fill="#FEA250" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="max-w-85 font-normal about text-[#0B132A] align-middle mt-5">“This is very unusual
+                        for my business that currently requires a virtual private network that has high security.”.</p>
+                </div>
+                <div class=" card max-w-100 rounded-xl border-2 p-7.5 h-full border-[#DDDDDD] cursor-pointer ">
+                    <div class="flex items-center justify-between ">
+                        <div class=" max-w-45.5 h-12.5 flex">
+                            <img src="/img/Ellipse 175.png" alt="profile" class="mr-5">
+                            <div>
+                                <p class="font-medium name align-middle whitespace-nowrap">Viezh Robert</p>
+                                <p class="font-normal location text-[#4F5665] whitespace-nowrap">Warsaw, Poland</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <p class="mr-1.75">4.5</p>
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.1887 5.53497L10.2215 4.9584L8.4481 1.36309C8.39966 1.26465 8.31998 1.18497 8.22154 1.13653C7.97466 1.01465 7.67466 1.11622 7.55123 1.36309L5.77779 4.9584L1.8106 5.53497C1.70123 5.55059 1.60123 5.60215 1.52466 5.68028C1.4321 5.77541 1.3811 5.9034 1.38286 6.03613C1.38461 6.16885 1.43899 6.29544 1.53404 6.38809L4.40435 9.18653L3.72623 13.1381C3.71032 13.23 3.7205 13.3246 3.75559 13.411C3.79068 13.4974 3.84929 13.5723 3.92477 13.6271C4.00025 13.6819 4.08958 13.7145 4.18263 13.7211C4.27568 13.7278 4.36873 13.7082 4.45123 13.6647L7.99966 11.799L11.5481 13.6647C11.645 13.7162 11.7575 13.7334 11.8653 13.7147C12.1372 13.6678 12.32 13.41 12.2731 13.1381L11.595 9.18653L14.4653 6.38809C14.5434 6.31153 14.595 6.21153 14.6106 6.10215C14.6528 5.82872 14.4622 5.57559 14.1887 5.53497Z"
+                                    fill="#FEA250" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="max-w-85 font-normal about text-[#0B132A] align-middle mt-5">“Wow... I am very happy
+                        to use this VPN,
+                        it turned out to be more than my
+                        expectations and so far there have been no
+                        problems. LaslesVPN always the best”.</p>
+                </div>
+                <div class=" card max-w-100 rounded-xl border-2 p-7.5 h-full border-[#DDDDDD] cursor-pointer ">
+                    <div class="flex items-center justify-between ">
+                        <div class=" max-w-45.5 h-12.5 flex">
+                            <img src="/img/Ellipse 175 (1).png" alt="profile" class="mr-5">
+                            <div>
+                                <p class="font-medium name align-middle whitespace-nowrap">Yessica Christy</p>
+                                <p class="font-normal location text-[#4F5665] whitespace-nowrap">Shanxi, China</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center ">
+                            <p class="mr-1.75">4.5</p>
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.1887 5.53497L10.2215 4.9584L8.4481 1.36309C8.39966 1.26465 8.31998 1.18497 8.22154 1.13653C7.97466 1.01465 7.67466 1.11622 7.55123 1.36309L5.77779 4.9584L1.8106 5.53497C1.70123 5.55059 1.60123 5.60215 1.52466 5.68028C1.4321 5.77541 1.3811 5.9034 1.38286 6.03613C1.38461 6.16885 1.43899 6.29544 1.53404 6.38809L4.40435 9.18653L3.72623 13.1381C3.71032 13.23 3.7205 13.3246 3.75559 13.411C3.79068 13.4974 3.84929 13.5723 3.92477 13.6271C4.00025 13.6819 4.08958 13.7145 4.18263 13.7211C4.27568 13.7278 4.36873 13.7082 4.45123 13.6647L7.99966 11.799L11.5481 13.6647C11.645 13.7162 11.7575 13.7334 11.8653 13.7147C12.1372 13.6678 12.32 13.41 12.2731 13.1381L11.595 9.18653L14.4653 6.38809C14.5434 6.31153 14.595 6.21153 14.6106 6.10215C14.6528 5.82872 14.4622 5.57559 14.1887 5.53497Z"
+                                    fill="#FEA250" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="max-w-85 font-normal about text-[#0B132A] align-middle mt-5">“I like it because I
+                        like to travel far and still can connect with high speed.”.</p>
+                </div>
+                <div class=" card max-w-100 rounded-xl border-2 p-7.5 h-full border-[#DDDDDD] cursor-pointer">
+                    <div class="flex items-center justify-between ">
+                        <div class=" max-w-45.5 h-12.5 flex">
+                            <img src="/img/Mask Group (2).png" alt="profile" class="mr-5">
+                            <div>
+                                <p class="font-medium name align-middle whitespace-nowrap">Kim Young Jou</p>
+                                <p class="font-normal location text-[#4F5665] ">Seoul, South Korea</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <p class="mr-1.75">4.5</p>
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.1887 5.53497L10.2215 4.9584L8.4481 1.36309C8.39966 1.26465 8.31998 1.18497 8.22154 1.13653C7.97466 1.01465 7.67466 1.11622 7.55123 1.36309L5.77779 4.9584L1.8106 5.53497C1.70123 5.55059 1.60123 5.60215 1.52466 5.68028C1.4321 5.77541 1.3811 5.9034 1.38286 6.03613C1.38461 6.16885 1.43899 6.29544 1.53404 6.38809L4.40435 9.18653L3.72623 13.1381C3.71032 13.23 3.7205 13.3246 3.75559 13.411C3.79068 13.4974 3.84929 13.5723 3.92477 13.6271C4.00025 13.6819 4.08958 13.7145 4.18263 13.7211C4.27568 13.7278 4.36873 13.7082 4.45123 13.6647L7.99966 11.799L11.5481 13.6647C11.645 13.7162 11.7575 13.7334 11.8653 13.7147C12.1372 13.6678 12.32 13.41 12.2731 13.1381L11.595 9.18653L14.4653 6.38809C14.5434 6.31153 14.595 6.21153 14.6106 6.10215C14.6528 5.82872 14.4622 5.57559 14.1887 5.53497Z"
+                                    fill="#FEA250" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="max-w-85 font-normal about text-[#0B132A] align-middle mt-5">“This is very unusual
+                        for my business that currently requires a virtual private network that has high security.”</p>
+                </div>
+            </div>
+        </div>
+        <div class="justify-end flex gap-2 mr-17.5 button-parent">
+            <button
+                class="prev button flex items-center justify-center  cursor-pointer w-15 h-15 rounded-[50%] bg-[white] hover:bg-[#F53838] transition duration-100 ease-linear z-10 relative border-2 border-[#F53838]"
+                onclick="">
+                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M18.75 8.11875H3.925L8.4625 2.66875C8.67467 2.41348 8.77675 2.08438 8.74628 1.75385C8.7158 1.42332 8.55527 1.11843 8.3 0.906253C8.04473 0.69408 7.71563 0.592002 7.3851 0.622477C7.05456 0.652952 6.74967 0.813482 6.5375 1.06875L0.2875 8.56875C0.245451 8.62841 0.207849 8.69108 0.175 8.75625C0.175 8.81875 0.175 8.85625 0.0875002 8.91875C0.0308421 9.06208 0.0011764 9.21464 0 9.36875C0.0011764 9.52286 0.0308421 9.67543 0.0875002 9.81875C0.0875002 9.88125 0.0874998 9.91875 0.175 9.98125C0.207849 10.0464 0.245451 10.1091 0.2875 10.1688L6.5375 17.6688C6.65503 17.8099 6.8022 17.9233 6.96856 18.0011C7.13491 18.0789 7.31636 18.1191 7.5 18.1188C7.79207 18.1193 8.07511 18.0176 8.3 17.8313C8.42657 17.7263 8.5312 17.5974 8.60789 17.452C8.68458 17.3066 8.73183 17.1474 8.74692 16.9837C8.76202 16.82 8.74466 16.6549 8.69586 16.4979C8.64705 16.3409 8.56775 16.1951 8.4625 16.0688L3.925 10.6188H18.75C19.0815 10.6188 19.3995 10.4871 19.6339 10.2526C19.8683 10.0182 20 9.70027 20 9.36875C20 9.03723 19.8683 8.71929 19.6339 8.48487C19.3995 8.25045 19.0815 8.11875 18.75 8.11875Z"
+                        fill="#F53838" />
+                </svg>
+            </button>
+            <button
+                class="next button flex items-center justify-center  cursor-pointer w-15 h-15 rounded-[50%] bg-[white] hover:bg-[#F53838] transition duration-100 ease-linear z-10 relative border-2 border-[#F53838]"
+                onclick="">
+                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1.25 8.11875H16.075L11.5375 2.66875C11.3253 2.41348 11.2232 2.08438 11.2537 1.75385C11.2842 1.42332 11.4447 1.11843 11.7 0.906253C11.9553 0.69408 12.2844 0.592002 12.6149 0.622477C12.9454 0.652952 13.2503 0.813482 13.4625 1.06875L19.7125 8.56875C19.7545 8.62841 19.7922 8.69108 19.825 8.75625C19.825 8.81875 19.825 8.85625 19.9125 8.91875C19.9692 9.06208 19.9988 9.21464 20 9.36875C19.9988 9.52286 19.9692 9.67543 19.9125 9.81875C19.9125 9.88125 19.9125 9.91875 19.825 9.98125C19.7922 10.0464 19.7545 10.1091 19.7125 10.1688L13.4625 17.6688C13.345 17.8099 13.1978 17.9233 13.0314 18.0011C12.8651 18.0789 12.6836 18.1191 12.5 18.1188C12.2079 18.1193 11.9249 18.0176 11.7 17.8313C11.5734 17.7263 11.4688 17.5974 11.3921 17.452C11.3154 17.3066 11.2682 17.1474 11.2531 16.9837C11.238 16.82 11.2553 16.6549 11.3041 16.4979C11.3529 16.3409 11.4322 16.1951 11.5375 16.0688L16.075 10.6188H1.25C0.91848 10.6188 0.600536 10.4871 0.366116 10.2526C0.131695 10.0182 0 9.70027 0 9.36875C0 9.03723 0.131695 8.71929 0.366116 8.48487C0.600536 8.25045 0.91848 8.11875 1.25 8.11875Z"
+                        fill="#F53838" />
+                </svg>
+            </button>
+        </div>
+    </section>
+    <!-- section6 -->
+    <section class="bg-[linear-gradient(to_bottom,_#FFFFFF_50%,_#F8F8F8_50%)]">
+        <div class="container mx-auto px-3 pb-15 ">
+            <div
+                class="  w-full bg-white flex  flex-col md:flex-row gap-7 md:gap-0 items-center justify-between md:py-14.5 py-10 xl:px-17.5 lg:px-12.5 px-5 rounded-xl shadow-[4px_10px_60px_-26px_rgba(0,0,0,0.2)]">
+                <div>
+                    <p class="font-medium fs_3xl  text-center md:text-start max-w-92.75  text-[#0B132A]">Subscribe Now
+                        for Get Special Features!
+                    </p>
+                    <p class="font-normal fs_md text-[#4F5665] mt-5 text-center md:text-start">Let's subscribe with us
+                        and
+                        find the
+                        fun.</p>
+                </div>
+                <button
+                    class="text-white font-bold  whitespace-nowrap fs_md px-16.25 h-15 bg-[#F53838] rounded-xl shadow-[#F5383859] hover:shadow-xl transition-shadow duration-200 cursor-pointer">
+                    Subscribe Now
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="pb-25 bg-[#F8F8F8] ">
+        <div class="container mx-auto px-3 ">
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <img src="/img/Standard Collection 27.png" alt="image" class="cursor-pointer hover:scale-105">
+                    <p class="font-normal fs_md text-[#4F5665] max-w-85 mt-5"><span
+                            class="font-medium text-[#4F5665]">LaslesVPN</span> is a private virtual network that has
+                        unique features and has high security.</p>
+                    <div class="my-8 flex gap-3">
+                        <div
+                            class="h-10 w-10 rounded-[50%] bg-[white] flex items-center justify-center cursor-pointer hover:bg-[#F53838]  transition-colors duration-100 ease-linear group">
+                            <svg width="11" height="21" viewBox="0 0 11 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="group-hover:fill-white"
+                                    d="M7 12.125H9.5L10.5 8.125H7V6.125C7 5.095 7 4.125 9 4.125H10.5V0.765C10.174 0.722 8.943 0.625 7.643 0.625C4.928 0.625 3 2.282 3 5.325V8.125H0V12.125H3V20.625H7V12.125Z"
+                                    fill="#F53838" />
+                            </svg>
+                        </div>
+                        <div
+                            class="h-10 w-10 rounded-[50%] bg-[white] flex items-center justify-center cursor-pointer hover:bg-[#F53838] transition-colors duration-100 ease-linear group">
+                            <svg width="22" height="17" viewBox="0 0 22 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="group-hover:fill-white"
+                                    d="M21.1623 2.28105C20.3989 2.61874 19.5893 2.84052 18.7603 2.93905C19.634 2.41648 20.288 1.59406 20.6003 0.625049C19.7803 1.11305 18.8813 1.45505 17.9443 1.64005C17.3149 0.966628 16.4807 0.520012 15.5713 0.369633C14.6618 0.219255 13.7282 0.37354 12.9156 0.808502C12.1029 1.24346 11.4567 1.93473 11.0774 2.77484C10.6981 3.61495 10.607 4.55683 10.8183 5.45405C9.15541 5.3707 7.52863 4.93857 6.04358 4.18571C4.55854 3.43285 3.24842 2.3761 2.1983 1.08405C1.82659 1.7225 1.63125 2.44828 1.6323 3.18705C1.6323 4.63705 2.3703 5.91805 3.4923 6.66805C2.82831 6.64715 2.17893 6.46783 1.5983 6.14505V6.19705C1.5985 7.16275 1.93267 8.09866 2.54414 8.84611C3.15562 9.59355 4.00678 10.1065 4.9533 10.298C4.33691 10.4651 3.6906 10.4897 3.0633 10.37C3.33016 11.2013 3.8503 11.9282 4.55089 12.4492C5.25147 12.9701 6.09742 13.2588 6.9703 13.275C6.10278 13.9564 5.10947 14.46 4.04718 14.7572C2.98488 15.0544 1.87442 15.1393 0.779297 15.007C2.69099 16.2365 4.91639 16.8892 7.1893 16.887C14.8823 16.887 19.0893 10.514 19.0893 4.98705C19.0893 4.80705 19.0843 4.62505 19.0763 4.44705C19.8952 3.85522 20.6019 3.12207 21.1633 2.28205L21.1623 2.28105Z"
+                                    fill="#F53838" />
+                            </svg>
+                        </div>
+                        <div
+                            class="h-10 w-10 rounded-[50%] bg-[white] flex items-center justify-center cursor-pointer hover:bg-[#F53838] transition-colors duration-100 ease-linear group">
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="group-hover:fill-white"
+                                    d="M10 0.625C12.717 0.625 13.056 0.635 14.122 0.685C15.187 0.735 15.912 0.902 16.55 1.15C17.21 1.404 17.766 1.748 18.322 2.303C18.8305 2.8029 19.224 3.40759 19.475 4.075C19.722 4.712 19.89 5.438 19.94 6.503C19.987 7.569 20 7.908 20 10.625C20 13.342 19.99 13.681 19.94 14.747C19.89 15.812 19.722 16.537 19.475 17.175C19.2247 17.8428 18.8311 18.4476 18.322 18.947C17.822 19.4553 17.2173 19.8488 16.55 20.1C15.913 20.347 15.187 20.515 14.122 20.565C13.056 20.612 12.717 20.625 10 20.625C7.283 20.625 6.944 20.615 5.878 20.565C4.813 20.515 4.088 20.347 3.45 20.1C2.78233 19.8495 2.17753 19.4559 1.678 18.947C1.16941 18.4472 0.775931 17.8425 0.525 17.175C0.277 16.538 0.11 15.812 0.0599999 14.747C0.0129999 13.681 0 13.342 0 10.625C0 7.908 0.00999994 7.569 0.0599999 6.503C0.11 5.437 0.277 4.713 0.525 4.075C0.775236 3.40718 1.1688 2.80232 1.678 2.303C2.17767 1.79423 2.78243 1.40073 3.45 1.15C4.088 0.902 4.812 0.735 5.878 0.685C6.944 0.638 7.283 0.625 10 0.625ZM10 5.625C8.67392 5.625 7.40215 6.15178 6.46447 7.08947C5.52678 8.02715 5 9.29892 5 10.625C5 11.9511 5.52678 13.2229 6.46447 14.1605C7.40215 15.0982 8.67392 15.625 10 15.625C11.3261 15.625 12.5979 15.0982 13.5355 14.1605C14.4732 13.2229 15 11.9511 15 10.625C15 9.29892 14.4732 8.02715 13.5355 7.08947C12.5979 6.15178 11.3261 5.625 10 5.625ZM16.5 5.375C16.5 5.04348 16.3683 4.72554 16.1339 4.49112C15.8995 4.2567 15.5815 4.125 15.25 4.125C14.9185 4.125 14.6005 4.2567 14.3661 4.49112C14.1317 4.72554 14 5.04348 14 5.375C14 5.70652 14.1317 6.02446 14.3661 6.25888C14.6005 6.4933 14.9185 6.625 15.25 6.625C15.5815 6.625 15.8995 6.4933 16.1339 6.25888C16.3683 6.02446 16.5 5.70652 16.5 5.375ZM10 7.625C10.7956 7.625 11.5587 7.94107 12.1213 8.50368C12.6839 9.06629 13 9.82935 13 10.625C13 11.4206 12.6839 12.1837 12.1213 12.7463C11.5587 13.3089 10.7956 13.625 10 13.625C9.20435 13.625 8.44129 13.3089 7.87868 12.7463C7.31607 12.1837 7 11.4206 7 10.625C7 9.82935 7.31607 9.06629 7.87868 8.50368C8.44129 7.94107 9.20435 7.625 10 7.625Z"
+                                    fill="#F53838" />
+                            </svg>
+                        </div>
+                    </div>
+                    <a href="" class="text-[#AFB5C0] font-normal fs_md">©2020Lasles<span
+                            class="font-medium ">VPN</span></a>
+                </div>
+                <div class="flex justify-between">
+                    <div class="flex flex-col">
+                        <p class="font-medium fs_lg text-[#0B132A] ">Product</p>
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
+                            Download
+                            <span
+                                class="absolute left-0 bottom-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
+                            Pricing
+                            <span
+                                class="absolute left-0 bottom-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
+                            Locations
+                            <span
+                                class="absolute left-0 bottom-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
+                            Server
+                            <span
+                                class="absolute left-0 bottom-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
+                            Countries
+                            <span
+                                class="absolute left-0 bottom-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
+                            Blog
+                            <span
+                                class="absolute left-0 bottom-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="font-medium fs_lg text-[#0B132A] ">Engage</p>
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
+                            LaslesVPN ?
+                            <span
+                                class="absolute left-0 bottom-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
+                            FAQ
+                            <span
+                                class="absolute left-0 bottom-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
+                            Tutorials
+                            <span
+                                class="absolute left-0 bottom-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
+                            About Us
+                            <span
+                                class="absolute left-0 bottom-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
+                            Privacy Policy
+                            <span
+                                class="absolute left-0 bottom-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
+                            Terms of Service
+                            <span
+                                class="absolute left-0 bottom-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="font-medium fs_lg text-[#0B132A]">Earn Money</p>
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
+                            Affiliate
+                            <span
+                                class="absolute left-0 bottom-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
+                        <a href="#"
+                            class="relative inline-block text-[#4F5665] group font-normal mt-3 fs_md w-fit whitespace-nowrap">
+                            Become Partner
+                            <span
+                                class="absolute left-0 bottom-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
